@@ -512,8 +512,6 @@ class Character extends FlxSprite
 				animation.addByPrefix('dodge', 'Dodge instance 1', 24, false);
 				animation.addByPrefix('hit', 'Hurt instance 1', 24, false);
 
-				notSoSpecialAnimList.push('attack1');
-
 				addOffset('idle', 0, 0);
 				addOffset('singUP', -12, 51);
 				addOffset('singRIGHT', -20, -10);
@@ -522,9 +520,7 @@ class Character extends FlxSprite
 				addOffset('intro', 49, 2);
 				addOffset('attack1', 2, -3);
 				addOffset('dodge', 32, -9);
-				addOffset('hit', 120, 63);
-
-				setZoom(1.74);
+				addOffset('hit', 120, 63)
 
 				playAnim('idle');
 
