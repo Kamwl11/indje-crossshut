@@ -498,6 +498,36 @@ class Character extends FlxSprite
 				addOffset("singDOWN-alt", -30, -27);
 
 				playAnim('idle');
+
+                                case 'cuphead':
+				frames = Paths.getSparrowAtlas('characters/Cuphead_Remastered', 'shared', true);
+				animation.addByPrefix('idle', 'Cuphead_standing instance 1', 24, true);
+				animation.addByPrefix('singUP', 'Up instance 1', 24);
+				animation.addByPrefix('singRIGHT', 'Right instance 1', 24);
+				animation.addByPrefix('singDOWN', 'Down instance 1', 24);
+				animation.addByPrefix('singLEFT', 'Left instance 1', 24);
+
+				animation.addByPrefix('intro', 'Cuphead Intro phase 2 instance 1', false);
+				animation.addByPrefix('attack1', 'Shoot instance 1', 24, true);
+				animation.addByPrefix('dodge', 'Dodge instance 1', 24, false);
+				animation.addByPrefix('hit', 'Hurt instance 1', 24, false);
+
+				notSoSpecialAnimList.push('attack1');
+
+				addOffset('idle', 0, 0);
+				addOffset('singUP', -12, 51);
+				addOffset('singRIGHT', -20, -10);
+				addOffset('singLEFT', 40, -8);
+				addOffset('singDOWN', -24, -16);
+				addOffset('intro', 49, 2);
+				addOffset('attack1', 2, -3);
+				addOffset('dodge', 32, -9);
+				addOffset('hit', 120, 63);
+
+				setZoom(1.74);
+
+				playAnim('idle');
+
 		}
 
 		dance();
