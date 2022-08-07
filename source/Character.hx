@@ -500,7 +500,7 @@ class Character extends FlxSprite
 				playAnim('idle');
 
                 case 'cuphead':
-				frames = Paths.getSparrowAtlas('characters/Cuphead_Remastered', 'shared', true);
+				frames = Paths.getSparrowAtlas('characters/Cuphead_Remastered');
 				animation.addByPrefix('idle', 'Cuphead_standing instance 1', 24, true);
 				animation.addByPrefix('singUP', 'Up instance 1', 24);
 				animation.addByPrefix('singRIGHT', 'Right instance 1', 24);
@@ -523,7 +523,7 @@ class Character extends FlxSprite
 				addOffset('hit', 120, 63)
 				
 				playAnim('idle');
-		
+}
 
 		dance();
 
