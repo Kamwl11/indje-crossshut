@@ -523,7 +523,7 @@ class Character extends FlxSprite
 				addOffset('hit', 120, 63)
 				
 				playAnim('idle');
-		}
+		
 
 		dance();
 
