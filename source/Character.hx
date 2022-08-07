@@ -502,12 +502,12 @@ class Character extends FlxSprite
 				case 'cuphead':
 					// CUPHEAD ANIMATION LOADING CODE
 					frames = Paths.getSparrowAtlas('characters/Cuphead_Remastered);
-					animation.addByPrefix('idle', 'Cuphead_standing instance', 24);
-					animation.addByPrefix('singUP', 'Up instance', 24);
-					animation.addByPrefix('singRIGHT', 'Right instance', 24);
+					animation.addByPrefix('idle', 'Cuphead_standing instance', 24, false);
+					animation.addByPrefix('singUP', 'Up instance', 24, false);
+					animation.addByPrefix('singRIGHT', 'Right instance', 24, false);
 					animation.addByPrefix('singDOWN', '
-					down instance', 24);
-					animation.addByPrefix('singLEFT', 'left instance', 24);
+					down instance', 24, false);
+					animation.addByPrefix('singLEFT', 'left instance', 24, false);
 	
 					addOffset('idle', 341, -204);
 					addOffset("singUP", 354, -108);
